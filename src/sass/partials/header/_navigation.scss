@@ -1,0 +1,38 @@
+.header__nav {
+    margin-right: 30px;
+}
+
+.nav {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.nav__list {
+    @include tablet {
+        display: flex;
+    }
+
+}
+
+.nav__item {
+    &:not(:last-child) {
+        margin-right: 28px;
+    }
+}
+
+.nav__link {
+    color: $second-text-color;
+
+    @include max-width (767px) {
+        @include fonts (16px, 1.18);
+    }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+}

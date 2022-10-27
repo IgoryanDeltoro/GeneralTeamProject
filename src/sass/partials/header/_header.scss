@@ -1,0 +1,16 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    height: 72px;
+
+    @include max-width (767px) {
+        justify-content: space-between;
+    }
+}
+
+.header-button {
+    @extend %button;
+    background-color: $button-color;
+    width: 98px;
+    height: 32px;
+}

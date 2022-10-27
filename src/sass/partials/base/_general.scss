@@ -1,0 +1,5 @@
+body {
+    @include fonts (14px, 1.5);
+    font-family: 'Roboto';
+    color: $main-text-color;
+}
